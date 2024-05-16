@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="kalkulator">Ini adalah kalkulator</h1>
+
+    <input type="number" id="x"><br>
+    <input type="number" id="y"><br>
+     <button onclick="kalkulator() ">Lihat Jawaban perkalian</button>
+     <button onclick="kalkulator2()">lihat jawaban pembagian</button>
+     <button onclick="kalkulator3()">lihat jawaban pertambahan</button>
+     <button onclick="kalkulatot4()">lihat jawaban pengurangan</button>
+    <script>
+
+        function kalkulator(x,y){
+            var x = document.getElementById("x").value
+            var y = document.getElementById("y").value
+            document.getElementById("kalkulator").innerHTML = x*y
+        }
+        function kalkulator2(x,y){
+            var x = document.getElementById("x").value
+            var y = document.getElementById("y").value
+            document.getElementById("kalkulator").innerHTML = x/y
+        }
+        function kalkulator3(x,y){
+            var x = document.getElementById("x").value
+            var y = document.getElementById("y").value
+            document.getElementById("kalkulator").innerHTML =PerseInt(x)+perseInt(y)
+        }
+        function kalkulator4(x,y){
+            var x = document.getElementById("x").value
+            var y = document.getElementById("y").value
+            document.getElementById("kalkulator").innerHTML = x-y
+        }
+        
+        
+    </script>
+</body>
+</html>
